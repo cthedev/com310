@@ -267,6 +267,15 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\ComManual\Main.cshtml" />
+    <Content Include="Views\ComManual\InstallingVisualStudio.cshtml" />
+    <Content Include="Views\ComManual\TableOfContents.cshtml" />
+    <Content Include="Views\ComManual\SetupWebsite.cshtml" />
+    <Content Include="Views\ComManual\Understanding.cshtml" />
+    <Content Include="Views\ComManual\AddingPages.cshtml" />
+    <Content Include="Views\ComManual\RemovePages.cshtml" />
+    <Content Include="Views\ComManual\Hosting.cshtml" />
+    <Content Include="Views\ComManual\Conclusion.cshtml" />
+    <Content Include="Views\ComManual\Appendix.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

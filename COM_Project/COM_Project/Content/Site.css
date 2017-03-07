@@ -3,6 +3,14 @@
     padding-bottom: 20px;
 }
 
+p{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -21,4 +29,17 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+h1:before{content:''}
+dl{clear:both;width:100%;overflow:hidden;background:#fff url("../Content/Capture.PNG") repeat-x 0 0.8em}
+dt,dd{background:#fff}
+dt{float:left;padding-right:3px}
+dd{margin:0;float:right;padding-left:3px}
+ol{margin:0;padding:0;list-style:none}
+li ol{width:95%;padding-left:5%}
+#title{
+    font-size: 150%;
+    font-weight:700; 
 }

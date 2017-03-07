@@ -1,1 +1,38 @@
-﻿
+﻿<html>
+<body>
+    <h1>Understanding C#, ASP.NET, MVC</h1>
+    <h3>Basic C# Terms</h3>
+    <p>Class: A class is a C# object that is defined by the developer or built into the language. A class defines the data and the behavior of the object you are creating. Classes can be made up of other classes, variables, and functions. For example, say you have a class Car and a class Tire. The Car class will have four instances of the Tire class. It could also have a function called drive() and variables that represent the make, model, year, etc.</p>
+    <p>Variable: A variable is just a name paired with a value. A variable always has a type. Some examples of Type are object, string, int, bool, etc. There are many other data types but they won’t be too important for this tutorial.</p>
+    <p>Function: A function, or method, is a block of code that is executed when it is called, you can see examples of functions in the code provided.</p>
+    <h3>ASP.NET</h3>
+    <h4>What is MVC?</h4>
+    <p>MVC stands for Model-View-Controller and it is a way to split the responsibilities of your application among three components: Models, Views, and Controllers. Each component has a distinct responsibility. </p>
+    <h4>What does the Controller do?</h4>
+    <p>A controller is really just a class, but behind the scenes it does a lot more. The controller will handle user interactions, select the View, and pass the Model down to the View. This may seem confusing right now, but when you see it all working together it will make a lot more sense.</p>
+    <h4>So now what is the Model?</h4>
+    <p>Again, the Models are just classes, but they are used to transfer data to the View. In a more complicated website, the model would get this data from a database, but for a simple website that we are helping you create, the Views will just use static content, so therefore we will not need to use any Model classes. </p>
+    <p>Okay so, I know what the Model is and what the Controller does, but what is a View?</p>
+    <h4>What is a View?</h4>
+    <p>View is not a class, in fact it’s not even a C# file, it is actually a .cshml file, also known as a Razor file. For the sake of our website, since we are only dealing with static content, we can think of this file as normal HTML. The View is what the visitor actually sees when they go to your website. This is known as the front-end of your website, which will be discussed towards the end of the instruction manual. Continue reading to see how MVC applications are organized in terms of file structure and what types of files go in each folder.</p>
+    <h3>Template Structure</h3>
+    <p>This section will briefly described the structure you will see when you first create the templated website. </p>
+    <h4>App_Start</h4>
+    <p>App_Start contains a lot of the overarching configurations of your MVC application. For the most part, you won’t want to touch any of these files. The one file in here that you may want to edit is BundleConfig.cs, which we talk about later.</p>
+    <h4>Content</h4>
+    <p>The Content folder is where you will want to add any CSS style sheets or images that you would like to use on your website. We will explain what CSS style sheets are and how to use them later on in the tutorial. Files that are placed in here can be referenced in HTML in order to include them on the page.</p>
+    <h4>Controller</h4>
+    <p>The Controller folder contains all of the Controllers that you will use in your website. The responsibility of the controller is to handle user interaction between the web server and your HTML views. For example, if you have a form on a page, when the user submits the form, the controller will be responsible for sending the information to the appropriate place. For the purpose of this manual, we will have one controller per page. It is possible to have multiple pages use the same controller, but for the sake of simplicity we will always have one controller per page.</p>
+    <h4>Models</h4>
+    <p>The Models folder is used to hold all of the Models that are needed for your website. Above we discussed what a model is used for. In this manual, we will not be dealing with Models but you should keep the folder around because maybe later you will want to make your website more complex.</p>
+    <h4>Scripts</h4>
+    <p>The Scripts folder contains any Javascript that you would like to include in your website. We give a brief overview of Javascript later in the manual, but again, this is a very complex topic that more experienced developers would use.</p>
+    <h4>Configurations</h4>
+    <p>It is important that any script, or stylesheet that is loaded into Visual Studio that you wish to use in your website is registered in the BundleConfig.cs file. This is mostly important if you are going to use third party javascript or CSS. If it is not included in the Bundle.config file, the system will not know it’s there and you will get errors. You will see an example of this file in use later in the manual under the Bootstrap section.</p>
+
+    <div>
+        <a class="btn btn-default" href=@Url.Action("StepTwo","ComManual")>Prev.</a>
+        <a class="btn btn-default" href=@Url.Action("StepFour","ComManual")>Next</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+﻿<html>
+<body>
+    
+    <h1>Font-End</h1>
+    <h3>Hypertext Markup Language Basics</h3>
+    <p>There are a few basic Hypertext Markup Language (HTML) Elements used throughout the different cshtml files in the project.</p>
+    <ul>
+        <li><p>&lt;a&gt;: this is an anchor tag, these usually define hyperlinks, and will almost always be seen with an “href” attribute, linking to a website.</p></li>
+        <li><p>&lt;address&gt;: defines the contact information for the author or owner of the website.</p></li>
+        <li><p>&lt;dd&gt;: used to describe an item in a description list.</p></li>
+        <li><p>&lt;div&gt;: this defines a division or section of an HTML document.</p></li>
+        <li><p>&lt;dl&gt;: defines a description list.</p></li>
+        <li><p>&lt;dt&gt;: defines an item in a description list.</p></li>
+        <li><p>&lt;h1&gt;, &lt;h2&gt;, … &lt;h6&gt;: these are six different tags, but the only difference among them is the number. The bigger the number, the bigger the header text.</p></li>
+        <li><p>&lt;hr&gt;: creates a horizontal line across an HTML webpage</p></li>
+        <li><p>&lt;input&gt;: defines a an input where users can either interact with or enter data to the website. This input can either be a text box or a button.</p></li>
+        <li><p>&lt;p&gt;: this a paragraph tag, this defines a paragraph with a blank line before and after the text.</p></li>
+        <li><p>&lt;strong&gt;: makes the text bold</p></li>
+    </ul>
+    <p>All these plethora of tags are used to define different sections or elements on a webpage. These tags can be embedded within each other, creating a website that is uniquely your own. Now, if you don’t make these HTML elements your own, your website will looking very plain and won’t attract many visitors. You can put some pizazz into your website with Cascading Style Sheets, or CSS.</p>
+    <h3>Cascading Style Sheets Basics</h3>
+    <p>There are only three different types of Cascading Style Sheets (CSS) defined in this project.</p>
+    <ul>
+        <li><p>max-width: this sets the max width of an HTML element, which prevents it from touches the edges of the webpage, basically shrinking that element.</p></li>
+        <li><p>Padding: this is used to generate white space around content, this can be used on a per side basis (padding-left , padding-top, padding-right, padding-bottom), and not just all or nothing.</p></li>
+        <li><p>White-space: specifies how white space will be handled in a piece of content, whether it will be wrapped or not.</p></li>
+    </ul>
+    <p>While these are the three properties you should know in order to make the website there are a lot more, like defining text color, size, font style, even whether the element is visible or not. To use these new CSS definitions, all you have to do is add the attribute “class” to any HTML tag, and then provide the class name with the styles you want to apply. For example, if I have a CSS class like this:</p>
+    <img src="~/Content/" />
+    <p>Then, I can apply this new “my-favorite-color” class to some text, like:</p>
+    <img src="~/Content/" />
+    <p>If you are not good with designing user interfaces, yet want a customized look to your webpage, you may want to take a look at Bootstrap. Bootstrap is a library that allows you to use their custom HTML elements and even makes web pages look good on all screen sizes by default. This is very useful since customizing a website to look good on every type of screen size is very time consuming. Bootstrap also has a grid system, which makes laying out your content, in different areas of a webpage, a cinch. To import download Bootstrap from https://getbootstrap.com/ , then put the CSS and JavaScript files in the corresponding, Content and Scripts folder, then add these lines to the “BundleConfig.cs” file:</p>
+    <img src="~/Content/" />
+    <p>Now you can use Bootstrap!</p>
+    <h3>JavaScript Overview</h3>
+    <p>JavaScript is a language that makes the website actually do something and perform meaningful tasks. While JavaScript is limited by it’s nature, it is still used to create dynamic and custom built websites, potentially on a per visitor basis. JavaScript is not used to connect to other web services, rather only to re-render or update different elements on a webpage. Chances are, if your website needs to have a lot of user interaction, you will want to learn Javascript, but that is a more complex topic. There are many, many books written solely about Javascript!</p>
+
+    <div>
+        <a class="btn btn-default" href=@Url.Action("StepFive","ComManual")>Prev.</a>
+        <a class="btn btn-default" href=@Url.Action("StepSeven","ComManual")>Next</a>
+    </div>
+</body>
+</html>

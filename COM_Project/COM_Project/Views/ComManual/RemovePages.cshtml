@@ -1,1 +1,14 @@
-﻿
+﻿<html>
+<body>
+    <h1>Remove Pages</h1>
+    <h3>Removing a Page with a Controller</h3>
+    <p>If your page is the only page in that controller then remove the Controller completely; remove the whole folder under Views that is associated with that Controller, and then remove any buttons that lead to the removed page. If your controller is home to many views than take out the ActionResult method for the page you are removing. </p>
+    <h3>Removing a Page without a Controller</h3>
+    <p>If you created a page without a Controller by following the instructions above, and want to remove the page, it is pretty simple. You basically just undo what you did above. You will want to remove the new Controller method you added. You will also want to remove the View that you added under the Views folder. Not removing the View won’t mess up your website, but it is always a good idea to clean up unused files so that you don’t clutter your project. Finally, and probably the most important is that you will want to remove the button that takes the user to that page. You don’t want your users to be clicking on buttons that give them an error. </p>
+
+    <div>
+        <a class="btn btn-default" href=@Url.Action("StepFour","ComManual")>Prev.</a>
+        <a class="btn btn-default" href=@Url.Action("StepSix","ComManual")>Next</a>
+    </div>
+</body>
+</html>

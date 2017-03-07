@@ -45,17 +45,22 @@ namespace COM_Project.Controllers
 
         public ActionResult StepSix()
         {
-            return View("Hosting"); 
+            return View("FrontEnd"); 
         }
 
         public ActionResult StepSeven()
         {
-            return View("Conclusion");
+            return View("Hosting");
         }
 
         public ActionResult StepEight()
         {
-            return View("Appendix");
+            return View("Conclusion");
+        }
+
+        public ActionResult StepNine()
+        {
+            return View("Appendix"); 
         }
     }
 }

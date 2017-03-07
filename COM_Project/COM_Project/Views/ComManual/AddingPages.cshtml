@@ -1,1 +1,26 @@
-﻿
+﻿<html>
+<body>
+    <h1>Adding Pages</h1>
+    <p>This section will describe how to add pages with and without page controllers for your website. A page is added without a controller if the controller is categorized to do the work for the page you wish to add. For instance you would add an addition view to a math controller. A controller and a view would be added if you want to do work on a separate category of work. </p>
+    <h3>Adding a Page with a Controller</h3>
+    <p>In order to add a new page with a new Controller you need to create a new Controller. To do this, right click on the Controllers folder in your project, click Add, and then select Controller. You should name this Controller after the page you are creating. For example, if you are creating a Contact Me page, name the Controller <bold>ContactController.cs.</bold> After typing the name, a Controller will be created for you. Next you need to create a new Folder under your Views folder. Following our example, this folder should be called <bold>Contact</bold>. Under this Contact folder, you should make a new View called <bold>Index.cshtml</bold>. You first view for each page should be called <bold>Index</bold>, because that is convention for MVC.</p>
+    <p>Now that you have created a new page, you need to create a way for the user to navigate to the new page. The easiest way to do this is to create a button with a Url.Action, see the screenshot below for clarity: </p>
+    <img src="~/Content/" />
+    <p>This is very similar to the button above, but the arguments change a little. Inside of the Url.Action, the first argument is the Controller action that you want to go to, in this case, it will be <bold>Index</bold>. The second argument is the new Controller you created, in this case it is <bold>NewPage</bold>. </p>
+    <h3>Adding a Page without a Controller</h3>
+    <p>If you would like to add a new page, but you think that a current Controller is related enough to the new page, you don’t need to add a new Controller. Instead you can extend the existing Controller. In order to do this you will need to add a new ActionResult method to your Controller. For example, take a look at the following screenshot: </p>
+    <img src="~/Content/" />
+    <p>You can see that the main Controller is called HomeController. The first method on this Controller is Index on line 12, which is the original page. When we wanted to add a new page, we added another ActionResult method called SecondPage, on line 18. In addition to the new Controller method, we had to add a new View file to include HTML of the new page. This screenshot shows you where that new file should go:</p>
+    <img src="~/Content/" />
+    <p>The new file is highlighted and is called NewPage.cshtml. You can see that it is under the Home folder inside of Views. Also notice that the name of this file matches the name of the Controller method. If you keep these names the same, MVC will know which View you want to return, but if you use different names, you will need to specify a view which can get a little complicated so we recommend that you simply match the names. </p>
+    <p>Now that you have created a new page, you need to create a way for the user to navigate to the new page. The easiest way to do this is to create a button with a Url.Action, see the screenshot below for clarity: </p>
+    <img src="~/Content/" />
+    <p>Notice that there is an onclick attribute. Inside of the Url.Action, the first argument is the Controller action you want to go to, in this case it is <bold>NewPage</bold> and the second argument is the Controller that the action is located in, in our case, <bold>Home</bold>. </p>
+    <p><bold>Note: Make sure these are put into quotes and spelled correctly, with the same capitalization that you used in your naming. </bold></p>
+
+    <div>
+        <a class="btn btn-default" href=@Url.Action("StepThree","ComManual")>Prev.</a>
+        <a class="btn btn-default" href=@Url.Action("StepFive","ComManual")>Next</a>
+    </div>
+</body>
+</html>

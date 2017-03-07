@@ -1,5 +1,27 @@
 ﻿<html>
 <body>
-    <h1>2</h1>
+    <h1>Setup Website</h1>
+    <h3>Background</h3>
+    <p>Setting up your website is one of the keys steps in allowing your code to flow between your file architecture. The file architecture in web design has to be specific so that way the pages a user visits are routing to the proper place. Luckily Visual Studios has templates that set this up for you. There are ways to do this manually, but for the purposes of this manual we will look into using templates to setup your website. These templates will setup the file structure, setup the configuration files, and provide you with starting pages. These pages will demo the basic functionalities you would use in a website so they can be used as reference in the future, or used as the pages themselves. Templates will provide, setup, and configure the scripts and styling hierarchy for you as well. </p>
+    <h3>Setup:</h3>
+    <h4>Step 1</h4>
+    <p>To start working on your website you have to launch Visual Studios. Since we are working with MVC architecture with our websites you have to follow these instructions as close as possible.</p>
+    <h4>Step 2</h4>
+    <p>In the Visual Studio top menu click File → New Project. </p> 
+    <br />
+    <p>Note: There are options to set up websites through web forms, this is not the options we want to click. </p>
+    <h4>Step 3</h4>
+    <p>In the left bar navigate to Templates → Visual C# → Web. Name your project in the “Name” text boxes at the bottom of the popup, and click “OK”. </p>
+    <br />
+    <p>Note: You do not need to change the name of the “Location”, “Solution”, or “Solution Name” unless you wish to change these manually.</p>
+    <h4>Step 4</h4>
+    <p>Another popup will appear, and in the ASP.NET Templates section click on the “MVC” box and click “OK”. You will not need to change any other configuration in this step. </p>
+    <h3>Project Setup Complete</h3>
+    <p>After you have clicked “OK” the project will set up the templates, and file structure for you. You will then be allowed to edit all project files. You will see files or folders named: Properties, References, App_Data, fonts, ApplicationInsight.config, favicon.ico, Global.asax, packages.config, Project_Readme.html, and Startup.cs which are necessary, but will not be touched for the remainder of this manual. This is okay to keep untouched for creating your first website. These files are edited with more experience not covered in this manual. </p>
+
+    <div>
+        <a class="btn btn-default" href=@Url.Action("StepOne","ComManual")>Prev.</a>
+        <a class="btn btn-default" href=@Url.Action("StepThree","ComManual")>Next</a>
+    </div>
 </body>
 </html>

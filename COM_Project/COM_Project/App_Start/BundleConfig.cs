@@ -20,12 +20,15 @@ namespace COM_Project
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/Site.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts").Include(
+                      "~/Content/bootstrap.css",
+                      "~/Content/Site.css"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/Site.css"));
         }
     }
 }

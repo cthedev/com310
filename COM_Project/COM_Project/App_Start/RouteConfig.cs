@@ -14,6 +14,12 @@ namespace COM_Project
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                "BLEH",
+                "cucumber",
+                new { controller = "ComManual", action = "Index", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
                 "Manual",
                 "manual",
                 new { controller = "ComManual", action = "Index", id = UrlParameter.Optional }
@@ -63,15 +69,28 @@ namespace COM_Project
 
             routes.MapRoute(
                 "Step7",
-                "Steps/Conclusion",
+                "Steps/7",
                 new { controller = "ComManual", action = "StepSeven" }
             );
 
             routes.MapRoute(
-                "Appendix",
-                "Appendix",
+                "Step8",
+                "Steps/Conclusion",
                 new { controller = "ComManual", action = "StepEight" }
             );
+
+
+            routes.MapRoute(
+                "Appendix",
+                "Appendix",
+                new { controller = "ComManual", action = "StepNine" }
+            );
+
+            routes.MapRoute(
+                name: "DefaultManual",
+                url: "ComManual/{action}/{id}",
+                defaults: new { controller = "ComManual", action = "Index", id = UrlParameter.Optional }
+            ); 
 
             routes.MapRoute(
                 name: "Default",
